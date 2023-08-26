@@ -1,23 +1,13 @@
 #include "monty.h"
-#include <string.h>
-
-void free_stack(stack_t **stack);
-int init_stack(stack_t **stack);
-int check_mode(stack_t *stack);
-
 /**
- * free_stack - frees a stack_t stack
- * @stack: pointer to the top (stack) or
- *         bottom (queue) of a stack_t
- */
-void free_stack(stack_t **stack)
+ * f_stack - prints the top
+ * @head: stack head
+ * @counter: line_number
+ * Return: no return
+*/
+void f_stack(stack_t **head, unsigned int counter)
 {
-	stack_t *tmp = *stack;
-
-	while (*stack)
-	{
-		tmp = (*stack)->next;
-		free(*stack);
-		*stack = tmp;
-	}
+	(void)head;
+	(void)counter;
+	bus.lifi = 0;
 }
